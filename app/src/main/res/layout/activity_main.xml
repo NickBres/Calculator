@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/cream"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/cream"
+        android:gravity="right|bottom"
+        android:text="1234567"
+        android:textSize="48sp"
+        android:textColor="@color/brown"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/acBtn"
+            style="@style/MoreBtn"
+            android:onClick="onDigit"
+            android:text="AC"
+            />
+        <Button
+            android:id="@+id/signBtn"
+            style="@style/MoreBtn"
+            android:text="+/-"
+            android:onClick="onDigit"/>
+        <Button
+            android:id="@+id/percentBtn"
+            style="@style/MoreBtn"
+            android:text="%"
+            android:onClick="onDigit"/>
+        <Button
+            android:id="@+id/divideBtn"
+            style="@style/SignBtn"
+            android:text="/" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/nineBtn"
+            style="@style/DigitBtn"
+            android:onClick="onDigit"
+            android:text="9"
+            />
+        <Button
+            android:id="@+id/eighthBtn"
+            style="@style/DigitBtn"
+            android:text="8"
+            android:onClick="onDigit"/>
+        <Button
+            android:id="@+id/sevenBtn"
+            style="@style/DigitBtn"
+            android:text="7"
+            android:onClick="onDigit"/>
+        <Button
+            android:id="@+id/multiplyBtn"
+            style="@style/SignBtn"
+            android:text="*" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/sixBtn"
+            style="@style/DigitBtn"
+            android:text="6"
+            android:onClick="onDigit"/>
+        <Button
+            android:id="@+id/fiveBtn"
+            style="@style/DigitBtn"
+            android:text="5"
+            android:onClick="onDigit"/>
+        <Button
+            android:id="@+id/fourBtn"
+            style="@style/DigitBtn"
+            android:text="4"
+            android:onClick="onDigit"/>
+        <Button
+            android:id="@+id/minusBtn"
+            style="@style/SignBtn"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/threeBtn"
+            style="@style/DigitBtn"
+            android:text="3"
+            android:onClick="onDigit"/>
+        <Button
+            android:id="@+id/twoBtn"
+            style="@style/DigitBtn"
+            android:text="2"
+            android:onClick="onDigit"/>
+        <Button
+            android:id="@+id/oneBtn"
+            style="@style/DigitBtn"
+            android:text="1"
+            android:onClick="onDigit"/>
+
+        <Button
+            android:id="@+id/plusBtn"
+            style="@style/SignBtn"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/zeroBtn"
+            style="@style/DigitBtn"
+            android:text="0"
+            android:onClick="onDigit"
+            android:layout_weight="2"/>
+        <Button
+            android:id="@+id/dotBtn"
+            style="@style/DigitBtn"
+            android:text="."
+            android:onClick="onDigit"/>
+        <Button
+            android:id="@+id/equalBtn"
+            style="@style/SignBtn"
+            android:text="="
+            android:onClick="onDigit"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
