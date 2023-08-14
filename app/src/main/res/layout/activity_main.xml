@@ -11,13 +11,13 @@
     android:padding="2dp">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvInput"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@color/cream"
         android:gravity="right|bottom"
-        android:text="1234567"
-        android:textSize="48sp"
+        android:text="0"
+        android:textSize="100dp"
         android:textColor="@color/brown"/>
 
     <LinearLayout
@@ -29,23 +29,24 @@
         <Button
             android:id="@+id/acBtn"
             style="@style/MoreBtn"
-            android:onClick="onDigit"
             android:text="AC"
+            android:onClick="onClear"
             />
         <Button
             android:id="@+id/signBtn"
             style="@style/MoreBtn"
             android:text="+/-"
-            android:onClick="onDigit"/>
+            android:onClick="onSign"/>
         <Button
             android:id="@+id/percentBtn"
             style="@style/MoreBtn"
             android:text="%"
-            android:onClick="onDigit"/>
+            android:onClick="onPercent"/>
         <Button
             android:id="@+id/divideBtn"
             style="@style/SignBtn"
-            android:text="/" />
+            android:text="÷"
+            android:onClick="onAction"/>
     </LinearLayout>
 
     <LinearLayout
@@ -73,7 +74,8 @@
         <Button
             android:id="@+id/multiplyBtn"
             style="@style/SignBtn"
-            android:text="*" />
+            android:text="×"
+            android:onClick="onAction"/>
     </LinearLayout>
 
     <LinearLayout
@@ -100,7 +102,8 @@
         <Button
             android:id="@+id/minusBtn"
             style="@style/SignBtn"
-            android:text="-" />
+            android:text="-"
+            android:onClick="onAction"/>
     </LinearLayout>
 
     <LinearLayout
@@ -128,7 +131,8 @@
         <Button
             android:id="@+id/plusBtn"
             style="@style/SignBtn"
-            android:text="+" />
+            android:text="+"
+            android:onClick="onAction"/>
     </LinearLayout>
 
     <LinearLayout
@@ -147,12 +151,12 @@
             android:id="@+id/dotBtn"
             style="@style/DigitBtn"
             android:text="."
-            android:onClick="onDigit"/>
+            android:onClick="onDecimal"/>
         <Button
             android:id="@+id/equalBtn"
             style="@style/SignBtn"
             android:text="="
-            android:onClick="onDigit"/>
+            android:onClick="onAction"/>
 
     </LinearLayout>
 
