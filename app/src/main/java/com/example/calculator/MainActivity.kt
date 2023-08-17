@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import java.math.BigDecimal
+import java.math.RoundingMode
 
 class MainActivity : AppCompatActivity() {
 
@@ -177,7 +178,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Cannot divide by 0", Toast.LENGTH_SHORT).show()
                 return
             }
-            currNum = prevNum.divide(currNum)
+            currNum = prevNum.divide(currNum, 8, RoundingMode.HALF_EVEN)
             isDivide = false
         }
         prevNum = BigDecimal.ZERO // reset the previous number
