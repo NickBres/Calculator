@@ -13,3 +13,6 @@ This project provides an Android calculator application designed to be as close 
 
 ## Acknowledgment:
 A special thank you to "The Complete Android 12 & Kotlin Development Masterclass" by Denis Panjuta from Udemy for providing foundational knowledge and inspiration for this project.
+
+
+![Untitled 2](https://github.com/NickBres/Calculator/assets/70432147/b6afab88-5571-4e13-afae-9b0748995f6e)
